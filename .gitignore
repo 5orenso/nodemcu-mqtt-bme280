@@ -28,3 +28,4 @@
 # PlatformIO stuff
 .piolibdeps
 platformio.ini
+.DS_Store
