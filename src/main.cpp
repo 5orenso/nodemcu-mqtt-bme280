@@ -99,7 +99,7 @@ void reconnect() {
         }
     }
 }
-
+9
 static void setupAirSensor(void) {
     if (!Air.begin()) {
         Serial.println("Could not find a valid BMP280 sensor, check wiring!");
@@ -121,9 +121,9 @@ void loop() {
     client.loop();
 
     float value = 0.0;
-    char temperatureValue[6];
-    char pressureValue[6];
-    char humidityValue[6];
+    char temperatureValue[10];
+    char pressureValue[10];
+    char humidityValue[10];
     long now = millis();
     if (now - lastMsg > 5000) {
         lastMsg = now;
