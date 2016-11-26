@@ -99,7 +99,7 @@ void reconnect() {
         }
     }
 }
-9
+
 static void setupAirSensor(void) {
     if (!Air.begin()) {
         Serial.println("Could not find a valid BMP280 sensor, check wiring!");
